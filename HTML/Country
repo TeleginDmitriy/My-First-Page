@@ -58,32 +58,48 @@ body
  }
 
 </style>
-
-
 <body>
-  <audio controls>
-    <source src="C:\Users\Дмитрий\Downloads\patriot.mp3">
-  </audio>
+   <audio controls>
+   <source src="C:\Users\XXX\OneDrive - Дневник.ру\Рабочий стол\абвг\patriot.mp3">
+   </audio>
 </body>
+
+<script>
+var flag=false;
+function playAudio(url)
+ {
+   if (!flag)
+ {
+ var audio = new Audio(url);
+ audio.loop=true;
+ audio.play();
+ flag=true;
+ }
+ }
+
+</script>
+
 </head>
 
 <body>
-
 <div class="container">
 <div id="Russia_image">
-<img src="C:\Users\Дмитрий\Downloads\orig.png" class="rotate" width=50% height=auto >
+<img src="C:\Users\XXX\OneDrive - Дневник.ру\Рабочий стол\абвг\orig.png" class="rotate" width=50% height=auto >
 </div>
 
-<div id="За спарведливость !">
+<div id="Z_V">
 <div class="centered">
-<h1 onclick="playAudio('images/C:\Users\Дмитрий\Downloads\patriot.mp3')">За спарведливость !</h1>
+<h1 onclick="playAudio('images/C:\Users\XXX\OneDrive - Дневник.ру\Рабочий стол\абвг\patriot.mp3')">За справедливость !</h1>
 </div>
 </div>
 </div>
 
 <p id="demo"></p>
 <script>
-document.getElementById("Russia_image").addEventListener("click", function() {document.getElementById("demo").innerHTML = "Russian Federation";});
+document.getElementById("Russia_image").addEventListener("click", function() 
+{
+ document.getElementById("demo").innerHTML = "Russian Federation";
+});
 
 </script>
 </body>
