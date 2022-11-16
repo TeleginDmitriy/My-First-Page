@@ -84,7 +84,7 @@ function playAudio(url)
 <body>
 <div class="container">
 <div id="Russia_image">
-<img src=HTML/Country.png" class="rotate" width=50% height=auto >
+<img src=HTML/orig.png" class="rotate" width=50% height=auto >
 </div>
 
 <div id="Z_V">
